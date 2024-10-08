@@ -603,3 +603,90 @@ section.features {
   width: 280px;
   height: 280px;
 }
+
+section.testimonials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 110px;
+}
+.testimonials .arrow-icon {
+  padding: 24px;
+  background-color: #fff;
+  border: 1px solid rgba(25, 24, 37, 0.1);
+  border-radius: 50%;
+}
+.testimonials > div:nth-child(3) {
+  background: #5D50C6;
+}
+.testimonials .center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  flex-grow: 1;
+}
+.testimonials .center .text {
+  text-align: center;
+}
+.testimonials .center span {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.2em;
+  color: #F85E9F;
+}
+.testimonials .center h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #191825;
+  margin-top: 8px;
+}
+.testimonials .profile img {
+  height: 90px;
+  width: 90px;
+}
+.testimonials .profile svg {
+  position: absolute;
+  top: -50vh;
+  left: -60vw;
+  width: 160vw;
+  transform: rotate(-3.37deg);
+  opacity: 0.1;
+  z-index: -2;
+}
+.testimonials .profile-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+.testimonials .profile-details h3 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: rgba(25, 24, 37, 0.75);
+}
+.testimonials .profile-details h3 span {
+  color: #FF5722;
+}
+.testimonials .profile-details p {
+  font-style: normal;
+  font-weight: 450;
+  font-size: 20px;
+  color: rgba(25, 24, 37, 0.75);
+  width: 56vw;
+}
+.testimonials .three-circle {
+  display: flex;
+  gap: 10px;
+}
+.testimonials .three-circle div {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background: rgba(25, 24, 37, 0.05);
+}
+.testimonials .three-circle div:nth-child(2) {
+  background: #F85E9F;
+}
