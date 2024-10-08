@@ -690,3 +690,77 @@ section.testimonials {
 .testimonials .three-circle div:nth-child(2) {
   background: #F85E9F;
 }
+
+section.newsletter {
+  position: relative;
+  padding: 0 110px;
+}
+section.newsletter > div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+  padding: 108px 54px;
+  background-color: #fff;
+  background: rgba(250, 205, 73, 0.08);
+  border-radius: 32px;
+}
+section.newsletter > div .graphic-ele.gr {
+  position: absolute;
+  top: 45vh;
+  right: -95vw;
+  background-color: transparent;
+}
+section.newsletter > div .graphic-ele {
+  position: absolute;
+  left: -3.4vw;
+  top: -10vh;
+}
+.newsletter .text span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  color: #F85E9F;
+  text-transform: uppercase;
+}
+.newsletter .text h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  color: #191825;
+  margin-top: 15px;
+}
+.newsletter .form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+.newsletter .form input {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding: 24px;
+  gap: 16px;
+  border-radius: 24px;
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: rgba(25, 24, 37, 0.75);
+}
+.newsletter .form button {
+  display: flex;
+  align-items: center;
+  padding: 32px 64px;
+  gap: 16px;
+  background: #5D50C6;
+  border-radius: 24px;
+  border: none;
+  font-weight: 700;
+  color: #FFFFFF;
+}
