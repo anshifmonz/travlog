@@ -1,0 +1,54 @@
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px 100px;
+  color: black;
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+nav .logo > svg {
+  height: 35px;
+}
+.logo span {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  color: #191825;
+}
+nav .navigations {
+  display: flex;
+  gap: 64px;
+}
+nav .navigations a {
+  cursor: pointer;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: rgba(25, 24, 37, 0.5);
+}
+nav .nav-btn button{
+  padding: 14px 24px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+}
+nav .nav-btn .log-btn {
+  color: #222831;
+  background-color: #fff;
+  border: 1px solid #EEEEEE;
+}
+nav .nav-btn .sign-btn {
+  color: #EEEEEE;
+  background-color: var(--blue);
+}

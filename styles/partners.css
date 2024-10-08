@@ -1,0 +1,20 @@
+section.partner-logos {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 34px 110px;
+}
+section.partner-logos .partner {
+  z-index: 3;
+}
+section.partner-logos .graphic-ele {
+  position: absolute;
+  left: 20px;
+  top: -50px;
+}
+section.partner-logos .gradient-circle {
+  top: -190px;
+  right: -410px;
+  background: #FACD49;
+}
