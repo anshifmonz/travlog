@@ -322,13 +322,11 @@ section.destination {
 }
 .destination .top .text span {
   color: #F85E9F;
-  font-style: normal;
   font-weight: 700;
   font-size: 1.2rem;
   letter-spacing: 0.2em;
 }
 .destination .top .text h2 {
-  font-style: normal;
   font-weight: 700;
   font-size: 2.2rem;
   color: #191825;
@@ -407,4 +405,122 @@ section.destination {
   position: absolute;
   right: 15px;
   top: 90px;
+}
+
+section.travel-point {
+  display: flex;
+  align-items: center;
+  gap: 128px;
+  padding-right: 110px;
+  height: 100vh;
+}
+section.travel-point .left {
+  position: relative;
+  height: fit-content;
+}
+section.travel-point .rectangle {
+  height: 73vh;
+  width: 50vw;
+  background: #FACD49;
+  border-radius: 0px 500px 500px 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+}
+section.travel-point .rectangle img{
+  width: 50vw;
+  height: 92vh;
+}
+section.travel-point  .icon-btn {
+  background-color: #FFFFFF;
+  top: 20px;
+  left: 480px;
+  width: 200px;
+}
+
+.travel-point .right {
+  align-self: flex-start;
+}
+.travel-point .right .top span {
+  color: #F85E9F;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  font-size: 20px;
+}
+.travel-point .right .top h2 {
+  font-weight: 700;
+  font-size: 43px;
+  color: #191825;
+  margin: 12px 0 18px 0;
+}
+.travel-point .right .top p {
+  font-family: 'Inter';
+  font-weight: 400;
+  color: rgba(25, 24, 37, 0.5);
+}
+.travel-point .right .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 24px;
+  margin-top: 32px;
+}
+.travel-point .right .grid-container .grid-item {
+  text-align: center;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background: #FFFFFF;
+  border: 1px solid rgba(25, 24, 37, 0.1);
+  border-radius: 32px;
+}
+.travel-point .grid-item h3 {
+  color: #FF5722;
+}
+.travel-point .grid-item span {
+  font-family: 'Inter', sans-serif;
+  color: #191825;
+}
+.bubbles {
+  position: absolute;
+  filter: blur(2px);
+  border-radius: 50%;
+}
+.bubbles.bbb1 {
+  left: 43vw;
+  top: -10vh;
+  height: 70px;
+  width: 70px;
+  background: linear-gradient(280.84deg, #5D50C6 7.11%, #F85E9F 93.54%);
+  filter: blur(6px);
+}
+.bbb2 {
+  left: 5vw;
+  top: -2vh;
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(280.84deg, #5D50C6 7.11%, #F85E9F 93.54%);
+}
+.bbb3 {
+  right: -4vw;
+  top: 11vh;
+  width: 30px;
+  height: 30px;
+  background: #FACD49;
+}
+.bbb4 {
+  left: 34vw;
+  top: 20vh;
+  width: 16px;
+  height: 16px;
+  background: #FF5722;
+}
+.bbb5 {
+  bottom: 24vh;
+  right: 8vw;
+  width: 32px;
+  height: 32px;
+  background: #FF5722;
 }
