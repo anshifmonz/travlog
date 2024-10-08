@@ -68,7 +68,6 @@ main {
   gap: 64px;
   overflow: hidden;
   padding-top: 32px;
-  padding-bottom: 100vh;
 }
 .hero {
   display: flex;
@@ -763,4 +762,54 @@ section.newsletter > div .graphic-ele {
   border: none;
   font-weight: 700;
   color: #FFFFFF;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 110px 80px;
+  margin-top: 10vh;
+}
+footer .left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 40%;
+}
+footer .left > a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+}
+footer .left > a h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+}
+footer .left > p {
+  font-weight: 450;
+  color: rgba(25, 24, 37, 0.5);
+}
+footer .left div:nth-child(3) {
+  display: flex;
+  gap: 22px;
+}
+
+footer .right {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+}
+footer .right div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+footer .right div > a {
+  text-decoration: none;
+  color: rgba(25, 24, 37, 0.5);
+}
+footer .right div > a:hover {
+  color: #5D50C6;
 }
