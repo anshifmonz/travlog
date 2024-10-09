@@ -6,6 +6,9 @@ nav{
   padding: 20px 100px;
   color: black;
 }
+nav .menu {
+  display: none;
+}
 nav .logo {
   display: flex;
   align-items: center;
@@ -51,4 +54,55 @@ nav .nav-btn .log-btn {
 nav .nav-btn .sign-btn {
   color: #EEEEEE;
   background-color: var(--blue);
+}
+
+@media (max-width: 1100px) {
+  nav {
+    padding: 20px 80px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  nav {
+    padding: 15px 60px;
+  }
+  nav .navigations {
+    display: none;
+  }
+  nav .menu {
+    display: block;
+  }
+}
+@media (max-width: 778px) {
+  nav .menu svg {
+    width: 50px;
+  }
+  nav .nav-btn button {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 660px) {
+  .sign-btn {
+    display: none;
+  }
+  .log-btn {
+    background-color: var(--blue) !important;
+    color: #EEEEEE !important;
+  }
+}
+@media (max-width: 660px) {
+  nav {
+    padding: 15px 30px;
+  }
+}
+
+/* Mobile  */
+@media (max-width: 460px) {
+  nav {
+    flex-direction: row-reverse;
+  }
+  .nav-btn {
+    display: none;
+  }
 }
