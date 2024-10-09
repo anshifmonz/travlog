@@ -18,3 +18,55 @@ section.partner-logos .gradient-circle {
   right: -410px;
   background: #FACD49;
 }
+
+@media (max-width: 1024px) {
+  section.partner-logos {
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 145px !important;
+    flex-wrap: wrap;
+  }
+  section.partner-logos .graphic-ele {
+    top: -200px;
+  }
+}
+@media (max-width: 886px) {
+  section.partner-logos {
+    padding: 20px 70px !important;
+  }
+}
+@media (max-width: 739px) {
+  section.partner-logos {
+    padding: 20px 0 !important;
+  }
+}
+@media (max-width: 595px) {
+  section.partner-logos > .partner > svg {
+    width: 130px;
+  }
+}
+@media (max-width: 595px) {
+  section.partner-logos .graphic-ele {
+    display: none;
+  }
+}
+@media (max-width: 475px) {
+  section.partner-logos > .partner > svg {
+    width: 120px;
+  }
+}
+@media (max-width: 444px) {
+  section.partner-logos > .partner > svg {
+    width: 113px;
+  }
+}
+@media (max-width: 422px) {
+  section.partner-logos > .partner > svg {
+    width: 100px;
+  }
+}
+@media (max-width: 383px) {
+  section.partner-logos > .partner > svg {
+    width: 80px;
+  }
+}
