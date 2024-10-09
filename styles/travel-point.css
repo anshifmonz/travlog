@@ -1,17 +1,18 @@
 section.travel-point {
   display: flex;
   align-items: center;
+  justify-content: start;
   gap: 128px;
   padding-right: 110px;
-  height: 100vh;
+  margin: 100px 0;
 }
 section.travel-point .left {
   position: relative;
   height: fit-content;
 }
 section.travel-point .rectangle {
-  height: 73vh;
-  width: 50vw;
+  height: 400px;
+  width: 550px;
   background: #FACD49;
   border-radius: 0px 500px 500px 0px;
   display: flex;
@@ -19,19 +20,17 @@ section.travel-point .rectangle {
   align-items: end;
 }
 section.travel-point .rectangle img{
-  width: 50vw;
-  height: 92vh;
+  width: 600px;
+  height: 500px;
 }
 section.travel-point  .icon-btn {
   background-color: #FFFFFF;
-  top: 20px;
-  left: 480px;
+  top: 10px;
+  left: 70%;
   width: 200px;
+  font-weight: 700;
 }
 
-.travel-point .right {
-  align-self: flex-start;
-}
 .travel-point .right .top span {
   color: var(--pink);
   font-weight: 700;
@@ -40,7 +39,7 @@ section.travel-point  .icon-btn {
 }
 .travel-point .right .top h2 {
   font-weight: 700;
-  font-size: 43px;
+  font-size: 2.2rem;
   color: #191825;
   margin: 12px 0 18px 0;
 }
@@ -58,7 +57,7 @@ section.travel-point  .icon-btn {
 }
 .travel-point .right .grid-container .grid-item {
   text-align: center;
-  padding: 24px;
+  padding: 24px 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,38 +79,271 @@ section.travel-point  .icon-btn {
   border-radius: 50%;
 }
 .bubbles.bbb1 {
-  left: 43vw;
-  top: -10vh;
+  right: 30%;
+  top: -22%;
   height: 70px;
   width: 70px;
   background: linear-gradient(280.84deg, var(--blue) 7.11%, var(--pink) 93.54%);
   filter: blur(6px);
 }
 .bbb2 {
-  left: 5vw;
-  top: -2vh;
+  left: 9%;
+  top: -3%;
   width: 30px;
   height: 30px;
   background: linear-gradient(280.84deg, var(--blue) 7.11%, var(--pink) 93.54%);
 }
 .bbb3 {
-  right: -4vw;
-  top: 11vh;
+  right: -5%;
+  top: 16%;
   width: 30px;
   height: 30px;
   background: #FACD49;
 }
 .bbb4 {
-  left: 34vw;
-  top: 20vh;
+  left: 70%;
+  top: 30%;
   width: 16px;
   height: 16px;
   background: var(--orange);
 }
 .bbb5 {
-  bottom: 24vh;
-  right: 8vw;
+  bottom: 30%;
+  right: 5%;
   width: 32px;
   height: 32px;
   background: var(--orange);
+}
+
+
+@media (max-width: 1150px) {
+  section.travel-point {
+    padding-right: 70px;
+    gap: 90px;
+  }
+}
+@media (max-width: 1125px) {
+  .travel-point .right .top h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1024px) {
+  section.travel-point {
+    flex-direction: column;
+    padding: 0;
+  }
+  .travel-point .left {
+    width: 100%;
+  }
+  .travel-point .left .rectangle {
+    width: 70vw !important;
+  }
+  .travel-point .left .rectangle img {
+    width: 600px;
+    height: 500px;
+  }
+  .bbb1 {
+    left: 50%;
+  }
+  .bbb2 {
+    left: 15%;
+  }
+  .bbb3 {
+    left: 70%;
+    top: 14%;
+  }
+  .bbb4 {
+    left: 50%;
+  }
+  .bbb5 {
+    right: 35%;
+  }
+  section.travel-point .icon-btn {
+    left: 55%;
+  } 
+  .travel-point .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 100px;
+    text-align: center;
+  }
+  .travel-point .right .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .travel-point .right p {
+    max-width: 75%;
+  }
+  .travel-point .right .grid-container {
+    width: 60%;
+  }
+  .travel-point .right .grid-container .grid-item {
+    text-align: center;
+    padding: 44px;
+  }
+}
+@media (max-width: 948px) {
+  .bbb2 {
+    left: 8%;
+  }
+}
+@media (max-width: 950px) {
+  .travel-point .left .rectangle {
+    height: 450px;
+    width: 80vw !important;
+  }
+  .travel-point .left .rectangle img {
+    width: 700px !important;
+    height: 550px;
+  }
+  .bbb4 {
+    left: 55%;
+  }
+  .bbb5 {
+    left: 70%;
+  }
+  .bbb3 {
+    left: 79%;
+  }
+  section.travel-point .icon-btn {
+    left: 60%;
+  }
+}
+@media (max-width: 820px) {
+  .travel-point .right {
+    padding: 0 40px;
+  }
+  .travel-point .grid-container {
+    width: fit-content !important;
+  }
+}
+@media (max-width: 812px) {
+  .travel-point .right p {
+    max-width: 100%;
+  }
+}
+@media (max-width: 760px) {
+  .travel-point .left .rectangle {
+    width: 90vw !important;
+  }
+  .bbb4 {
+    left: 60%;
+  }
+  .bbb3 {
+    left: 85%;
+  }
+  .bbb5 {
+    left: 80%;
+  }
+  section.travel-point .icon-btn {
+    left: 70%;
+  }
+}
+@media (max-width: 650px) {
+  section.travel-point .icon-btn {
+    left: 60%;
+  }
+  .bbb1 {
+    left: 70%;
+  }
+}
+@media (max-width: 590px) {
+  .travel-point .left .rectangle {
+    width: 95vw !important;
+  }
+  .travel-point .left .rectangle img {
+    width: 500px;
+    height: 520px;
+  }
+  .bbb1 {
+    left: 60%;
+  }
+  .bbb3 {
+    left: 89%;
+  }
+  .bbb4 {
+    left: 65%;
+  }
+}
+@media (max-width: 494px) {
+  .travel-point .left .rectangle {
+    width: 98vw !important;
+    height: 440px;
+  }
+  .travel-point .left .rectangle img {
+    position: relative;
+    width: 450px;
+    height: 500px;
+    left: 30px;
+  }
+  .bbb1 {
+    left: 60%;
+  }
+  .bbb3 {
+    left: 89%;
+  }
+  .bbb4 {
+    left:75%;
+  }
+  section.travel-point .icon-btn {
+    width: fit-content;
+    font-size: 14px;
+  } 
+}
+@media (max-width: 460px) {
+  section.travel-point .icon-btn {
+    left: 55%;
+  } 
+}
+@media (max-width: 430px) {
+  .travel-point .right .top h2 {
+    font-size: 1.7rem;
+  }
+  .travel-point .right {
+    padding: 0 0;
+  }
+  .travel-point .grid-container {
+    grid-template-columns: 90vw !important;
+    grid-template-rows: repeat(3, 1fr) !important;
+  }
+  .travel-point .grid-container .grid-item {
+    padding: 32px !important;
+  }
+}
+@media (max-width: 412px) {
+  .travel-point .left .rectangle img {
+    left: 50px;
+  }
+  section.travel-point .icon-btn {
+    font-size: 12px;
+  } 
+}
+@media (max-width: 390px) {
+  .travel-point .left .rectangle {
+    height: 420px;
+  }
+  .travel-point .left .rectangle img {
+    width: 420px;
+    height: 470px;
+    left: 60px;
+  }
+}
+@media (max-width: 370px) {
+  section.travel-point .icon-btn {
+    font-size: 10px;
+  }
+}
+@media (max-width: 342px) {
+  .travel-point .left .rectangle img {
+    width: 420px;
+    height: 470px;
+    left: 80px;
+  }
+  .bbb2, .bbb4, .bbb5, .bbb1 {
+    display: none;
+  }
 }
