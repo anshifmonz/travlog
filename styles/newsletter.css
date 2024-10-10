@@ -2,7 +2,7 @@ section.newsletter {
   position: relative;
   padding: 0 110px;
 }
-section.newsletter > div {
+section.newsletter > div:nth-child(1) {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -15,16 +15,16 @@ section.newsletter > div {
   background: rgba(250, 205, 73, 0.08);
   border-radius: 32px;
 }
-section.newsletter > div .graphic-ele.gr {
+section.newsletter > .graphic-ele2 {
   position: absolute;
-  top: 45vh;
-  right: -95vw;
+  bottom: -30%;
+  right: -0%;
   background-color: transparent;
 }
 section.newsletter > div .graphic-ele {
   position: absolute;
-  left: -3.4vw;
-  top: -10vh;
+  left: -7%;
+  top: -12%;
 }
 .newsletter .text span {
   font-style: normal;
@@ -70,4 +70,140 @@ section.newsletter > div .graphic-ele {
   border: none;
   font-weight: 700;
   color: #FFFFFF;
+}
+
+@media (max-width: 1024px) {
+  section.newsletter {
+    padding: 0 80px !important;   
+  }
+}
+@media (max-width: 948px) {
+  .newsletter .text h2 {
+    font-size: 35px;   
+  }
+  .newsletter .form button {
+    padding: 0 34px;
+  }
+  .newsletter > .graphic-ele2 {
+    bottom: -35%;
+  }
+}
+@media (max-width: 784px) {
+  section.newsletter {
+    padding: 0 50px !important;   
+  }
+  .newsletter .text h2 {
+    font-size: 28px;
+  }
+  .newsletter .text span {
+    font-size: 16px;
+  }
+  .newsletter .form button {
+    padding: 0 24px;
+  }
+  .newsletter .form button {
+    padding: 0 24px;
+  }
+  section.newsletter > div .graphic-ele {
+    left: -8%;
+  }
+  section.newsletter > div .graphic-ele svg {
+    height: 140px !important;
+  }
+}
+@media (max-width: 685px) {
+  .newsletter > div {
+    padding: 88px 24px !important;
+  }
+  .newsletter .text h2 {
+    font-size: 24px;
+  }
+  .newsletter .text span {
+    font-size: 14px;
+  }
+  section.newsletter > div .graphic-ele {
+    left: -10%;
+    top: -8%;
+  }
+  section.newsletter > div .graphic-ele svg {
+    height: 120px !important;
+  }
+  .newsletter .graphic-ele2 {
+    display: none;
+  }
+}
+@media (max-width: 564px) {
+  section.newsletter {
+    padding: 0 20px !important;   
+  }
+  .newsletter .form input {
+    padding: 18px;
+    border-radius: 12px !important;
+  }
+  .newsletter .form button {
+    border-radius: 12px !important;
+  }
+  section.newsletter > div .graphic-ele {
+    left: -11%;
+    top: -7%;
+  }
+  section.newsletter > div .graphic-ele svg {
+    height: 100px !important;
+  }
+}
+@media (max-width: 492px) {
+  .newsletter .form {
+    justify-content: center;
+  }
+  .newsletter > div {
+    padding: 58px 24px !important;
+  }
+  .newsletter .form input {
+    padding: 14px;
+  }
+  .newsletter .form button {
+    padding: 0 18px;
+  }
+  section.newsletter > div .graphic-ele {
+    left: -14%;
+    top: -5%;
+  }
+  section.newsletter > div .graphic-ele svg {
+    height: 90px !important;
+  }
+}
+@media (max-width: 440px) {
+  .newsletter .text h2 {
+    font-size: 20px;
+  }
+  .newsletter .text span {
+    font-size: 12px;
+  }
+  .newsletter .form {
+    flex-direction: column;
+  }
+  .newsletter .form input {
+    padding: 18px;
+  }
+  .newsletter .form button {
+    display: flex;
+    justify-content: center;
+    padding: 18px 18px;
+  }
+  .graphic-ele {
+    display: none;
+  }
+}
+@media (max-width: 390px) {
+  .newsletter .text h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 367px) {
+  .newsletter .text h2 {
+    font-size: 16px;
+  }
+  .newsletter .text span {
+    font-size: 10px;
+  }
 }
