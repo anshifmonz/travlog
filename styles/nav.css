@@ -9,6 +9,9 @@ nav{
 nav .menu {
   display: none;
 }
+nav > a {
+  text-decoration: none;
+}
 nav .logo {
   display: flex;
   align-items: center;
