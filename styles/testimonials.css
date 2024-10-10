@@ -3,6 +3,7 @@ section.testimonials {
   justify-content: space-between;
   align-items: center;
   padding: 0 110px;
+  margin: 100px 0;
 }
 .testimonials .arrow-icon {
   padding: 24px;
@@ -42,6 +43,7 @@ section.testimonials {
   width: 90px;
 }
 .testimonials .profile svg {
+  display: none;
   position: absolute;
   top: -50vh;
   left: -60vw;
@@ -83,4 +85,75 @@ section.testimonials {
 }
 .testimonials .three-circle div:nth-child(2) {
   background: var(--pink);
+}
+
+@media (max-width: 743px) {
+  section.testimonials {
+    padding: 0 70px;   
+  }
+  .testimonials .text h2 {
+    font-size: 2rem;
+  }
+  .testimonials .text span {
+    font-size: 18px;
+  }
+  .testimonials .profile-details h3 {
+    font-size: 1rem;
+  }
+  .testimonials .profile-details p {
+    font-size: 16px;
+  }
+  .testimonials .profile-details .star svg {
+    width: 214px ;
+    height: 26px;
+  }
+}
+@media (max-width: 585px) {
+  section.testimonials {
+    padding: 0 20px;
+  }
+  .testimonials .profile-details p {
+    width: 100%;
+    font-size: 14px;
+  }
+  .testimonials .profile-details .star svg {
+    width: 204px ;
+    height: 22px;
+  }
+}
+@media (max-width: 550px) {
+  .testimonials .arrow-icon {
+    padding: 16px;
+  } 
+}
+@media (max-width: 490px) {
+  .testimonials .profile-details h3 {
+    font-size: .8rem;
+  }
+}
+@media (max-width: 430px) {
+  .testimonials .text h2 {
+    font-size: 1.6rem !important;
+  }
+  .testimonials .text span {
+    font-size: 16px;
+  }
+  .testimonials .profile-details h3 {
+    font-size: 14px;
+  }
+  .testimonials .profile-details h3 span {
+    font-size: 18px;
+  }
+  .testimonials .profile-details p {
+    width: 110%;
+  }
+  .testimonials .arrow-icon {
+    align-self: start;
+    margin-top: 60px;
+  }
+}
+@media (max-width: 373px) {
+  section.testimonials {
+    padding: 0 0 !important;
+  }
 }
