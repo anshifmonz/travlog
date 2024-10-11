@@ -180,7 +180,7 @@ div.watch-demo {
     padding: 20px 60px !important;
     gap: 64px;
   }
-  .hero .left {
+  .hero > .left {
     align-items: center;
     text-align: center;
     text-wrap: wrap;
@@ -219,18 +219,29 @@ div.watch-demo {
   }
 }
 @media (max-width: 450px) {
+  .hero > .right .imgs {
+    gap: 15px;
+  }
   .hero > .right .imgs .right img {
     width: 180px;
     height: 240px;
   }
   .hero > .right .imgs .left img {
-   width: 170px;
-   height: 180px; 
+    width: 170px;
+    height: 180px; 
+  }
+  .hero > .right .imgs .right .round-icon {
+    top: 340px;
+    right: 80px;
+  }
+  .hero > .right .world-vector > svg {
+    width: 450px;
+    height: 160px;
+    left: -41px !important;
   }
   .hero > .right .imgs .right .icon-btn {
     top: 250px;
     right: -10px;
-    padding: 6px 12px !important;
   }
 }
 @media (max-width: 430px) {
@@ -245,6 +256,76 @@ div.watch-demo {
   .hero > .right .imgs .left .round-icon {
     top: 168px;
     left: -10px;
-    background: var(--pink);
   }
+}
+@media (max-width: 418px) {
+  .hero > .right .world-vector > svg {
+    width: 400px;
+    left: -20px !important;
+  }
+}
+@media (max-width: 400px) {
+  .hero > .right .world-vector > svg {
+    width: 380px;
+    left: -28px !important;
+    top: -55px;
+  }
+  .hero > .right .imgs .right img {
+    width: 160px;
+    height: 220px;
+  }
+  .hero > .right .imgs .left img {
+   width: 150px;
+   height: 160px; 
+  }
+  .hero > .right .imgs .right .round-icon {
+    top: 320px;
+    right: 70px;
+  }
+  .hero > .right .imgs .right .icon-btn {
+    top: 220px;
+    right: -20px;
+  }
+}
+@media (max-width: 394px) {
+  .hero > .left {
+    padding: 0 10px;
+  }
+  .hero > .left .top-btn {
+    padding: 14px 18px;
+    gap: 16px;
+  }
+  .hero > .left h1 {
+    width: 90% !important;
+    font-size: 2rem;
+  }
+  .hero > .left p {
+    width: 90% !important;
+    font-size: 14px;
+  }
+  .hero > .left .down-btns div {
+    width: 90% !important;
+  }
+}
+@media (max-width: 382px) {
+  .hero > .right .world-vector > svg {
+    width: 360px;
+    left: -18px !important;
+    top: -60px;
+  }
+}
+@media (max-width: 360px) {
+  .hero > .right .world-vector > svg {
+    width: 340px;
+    left: -8px !important;
+    top: -70px;
+  }
+  .hero > .right .imgs .right .icon-btn {
+    right: -10px;
+  }
+}
+@media (max-width: 1024px) and (min-height: 950px) {
+  .hero {
+    justify-content: center;
+  } 
 }
